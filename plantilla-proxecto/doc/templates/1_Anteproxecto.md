@@ -99,8 +99,10 @@ La creación del producto necesitará, principalmente, un ordenador lo suficient
 los datos de la web. Las tecnologías a usar serán: HTML para la estructura de la página, CSS para los estilos y la accesibilidad, 
 phpmyadmin para la base de datos de los productos y los usuarios, PHP para la conexión de los datos sobre la página web y la conexión de los usuarios a sus cuentas con el plan que han contratado y javascript para procesar las compras y ventas de productos.
 
+**indica los apartados: infraestructura, frontend, backend**
 
 ## 4- Planificación
+**DIAGRAMA DE GANTT!!**
 
 Estudio preliminar: 2 semanas (7 de octubre)
 Análisis: 1 semana (16 de octubre)
