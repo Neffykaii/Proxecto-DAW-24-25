@@ -8,55 +8,43 @@
   - [5- Normativa](#5--normativa)
   - [6- Melloras futuras](#6--melloras-futuras)
 
-> *EXPLICACION*: Este documento describe os requirimentos para "nome do proxecto" especificando que funcionalidade ofrecerá e de que xeito.
-
 ## 1- Descrición Xeral
 
->*EXPLICACION*: Descrición Xeral do proxecto
+Este proyecto trata de un portal entre usuarios y librerías, donde el usuario podrá elegir, entre un amplio catálogo de libros provenientes de diferentes tiendas, aquellos que desee comprar o pedir prestado, incluso tendría la oportunidad de que el libro sea enviado a la tienda que el usuario indique haciéndose este último cargo de los gastos de envío. Sin embargo, si el usuario adquiere una suscripción, contará con algunas ventajas tales como: el máximo de libros que puede tomar prestados al mismo tiempo se incrementa (antes 3, ahora 6), los gastos de envío son gratuitos un número contado de veces, es decir, si el usuario hace un pedido de importe inferior a 50€ (si supera este importe los gastos de envío son gratuitos para los suscritos y no suscritos), este será gratuito hasta, por ejemplo, un máximo de 4 veces al mes. 
+Por otra parte, si el usuario desea vender algún libro, deberá contactar directamente con las librería a través del correo electrónico que estas faciliten en la plataforma.
+Del lado de las empresas, estas podrán visualizar todos y cada uno de los pedidos a través de una de las pestañas de la página, informando si se trata de una compra o un préstamo y si el usuario que solicita los productos está o no suscrito.
 
 ## 2- Funcionalidades
 
->*EXPLICACION* Describir que servizos ou operacións se van poder realizar por medio do noso proxecto, indicando que actores interveñen en cada caso.
->
-> Enumeradas, de maneira que na fase de deseño poidamos definir o diagrama ou configuración correspondente a cada funcionalidade.
-> Cada función ten uns datos de entrada e uns datos de saída. Entre os datos de entrada e de saída, realízase un proceso, que debe ser explicado.
-
-Exemplo:
-
-| Acción   |  Descrición        |
-|----------|--------------------|
-| Alta de productos   | Dar de alta os productos na base de datos|
-| Modificar productos | Modificación de productos na base de datos|
-| Presentación dos productos  | Mostra dos productos por medio da páxina web |
+Vista de libros - Poder consultar el catálogo donde se muestran la portada y el nombre de todos los libros.
+Alta de libros - Dar de alta libros a la base de datos.
+Modificación de libros - Poder modificar cualquier información de un libro
+Cambio de estado de un libro - Informar si el libro se encuentra disponible o si está prestado.
+Borrar libro - Borrar toda información sobre un libro que ya no esté disponible.
+Alta de usuarios - Dar de alta usuarios en la base de datos.
+Modificación usuarios - Modificar información sobre los usuarios.
+Borrar usuario - borrar toda información del usuario que lo desee.
 
 ## 3- Tipos de usuarios
 
-> *EXPLICACION* Describir os tipos de usuario que poderán acceder ao noso sistema. Habitualmente os tipos de usuario veñen definidos polas funcionalidades ás cales teñen acceso. En termos xerais existen moitos grupos de usuarios: anónimos, novos, rexistrados, bloqueados, confirmados, verificados, administradores, etc.
->
-> Exemplo:
->
-> - Usuario xenérico, que terá acceso a ...
-> - Usuario técnico, que poderá...
+Usuario genérico - Acceso a la página de inicio, al catálogo, a la información tanto de libros como librerias, al apartado que informa sobre la suscripción mensual a la que pueden optar y al apartdo para iniciar sesion o registrarse, asi como al portal de compras de los libros.
+
+Usuario registrado - Tendrá acceso a todos los apartados anteriores pero, a mayores, contará con un perfil propio donde podrá ver sus datos y modificarlos.
+
+Usuario verificado (librerias) - Tendrán acceso a todo cuanto puede hacer el usuario genérico además de un perfil propio donde podrán modificar sus datos y los productos que añadan, así como visualizar las compras que los usuarios registrados puedan hacer.
 
 ## 4- Contorno operacional
 
-> *EXPLICACION* Neste apartado deben describirse os recursos necesarios, dende o punto de vista do usuario, para poder operar coa aplicación web. Habitualmente consiste nun navegador web actualizado e unha conexión a internet.
-Se é necesario algún hardware ou software adicional, deberá indicarse.
+Para acceder a la web, el usuario tan solo necesitara una conexión a internet y su navegador de confianza con las actualizaciones presentes para que el rendimiento de la web sea lo mejor posible.
 
 ## 5- Normativa
 
-> *EXPLICACION* Investigarase que normativa vixente afecta ao desenvolvemento do proxecto e de que maneira. O proxecto debe adaptarse ás esixencias legais dos territorios onde vai operar.
-> 
-> Pola natureza dos sistema de información, unha lei que se vai a ter que mencionar de forma obrigatoria é la [Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDPGDD)](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673). O ámbito da LOPDPGDD é nacional. Se a aplicación está pensada para operar a nivel europeo, tamén se debe facer referencia á [General Data Protection Regulation (GDPR)](https://eur-lex.europa.eu/eli/reg/2016/679/oj). Na documentación debe afirmarse que o proxecto cumpre coa normativa vixente.
->
-> Para cumplir a LOPDPGDD e/ou GDPR debe ter un apartado na web onde se indique quen é a persoa responsable do tratamento dos datos e para que fins se van utilizar. Habitualmente esta información estructúrase nos seguintes apartados:
->
-> - Aviso legal.
-> - Política de privacidade.
-> - Política de cookies.
->
-> É acosenllable ver [exemplos de webs](https://www.spotify.com/es/legal/privacy-policy/) que conteñan textos legais referenciando a LOPDPGDD ou GDPR.
+Como se trata de una aplicación que en un principio actuará únicamente en Galicia la principal lei que le afecta es la Ley 5/2016, de 4 de mayo, del patrimonio cultural de Galicia, donde el usuario permite el tratamiento de datos.
+
+Por otra parte, la Ley 7/2014, de 26 de septiembre, de archivos y documentos de Galicia, permite la conservación de dichos datos hasta que se cumpla con la finalidad dispuesta para la funcionalidad del portal web que el usuario esté utilizando.
+
+La Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDPGDD) estará presente, garantizando la seguridad de los datos de los usuarios.
 
 ## 6- Melloras futuras
 
-> *EXPLICACION* É posible que o noso proxecto se centre en resolver un problema concreto que se poderá ampliar no futuro con novas funcionalidades, novas interfaces, etc.
+Algunas de las funcionalidades que se pretenden añadir al proyecto serían: filtrado de libros por géneros y búsqueda por nombre.
