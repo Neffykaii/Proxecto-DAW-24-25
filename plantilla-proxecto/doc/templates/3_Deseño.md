@@ -14,11 +14,16 @@
 
 ## 2- Casos de uso
 
-> *EXPLICACIÓN:* Facer os diagramas de casos de uso que representen como as persoas usuarias interaccionan co sistema.
->
->Deben incluírse o(s) tipo(s) de usuario implicados en cada caso de uso.
+![alt text](..\img\Diagrama-flujo-proyectoSAF.drawio.png)
 
 ## 3- Diagrama de Base de Datos
+- Modelo Entidade/relación
+
+![alt text](..\img\Diagrama-ER-proyectoSAF.drawio.png)
+
+- Modelo relacional
+
+![alt text](..\img\Diagrama-relacional-proyectoSAF.drawio.png)
 
 > *EXPLICACIÓN:* Neste apartado incluiranse os diagramas relacionados coa Base de Datos:
 >
