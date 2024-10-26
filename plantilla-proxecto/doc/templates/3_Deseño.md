@@ -14,6 +14,8 @@
 
 ## 2- Casos de uso
 
+![alt text](..\img\Diagrama-usuarios-proyectoSAF.drawio.png)
+
 ![alt text](..\img\Diagrama-flujo-proyectoSAF.drawio.png)
 
 ## 3- Diagrama de Base de Datos
@@ -24,13 +26,6 @@
 - Modelo relacional
 
 ![alt text](..\img\Diagrama-relacional-proyectoSAF.drawio.png)
-
-> *EXPLICACIÓN:* Neste apartado incluiranse os diagramas relacionados coa Base de Datos:
->
-> - Modelo Entidade/relación
-> - Modelo relacional
->
-> Pódese entregar a captura do phpMyAdmin se se emprega MariaDB como Modelo relacional.
 
 ## 4- Deseño de interface de usuarios
 
