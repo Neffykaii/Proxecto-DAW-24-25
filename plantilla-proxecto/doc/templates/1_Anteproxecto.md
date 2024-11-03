@@ -31,50 +31,72 @@ usuario solicita hasta su tienda de confianza, lo cual beneficia a estas última
 
 ### 2.1- Idea de negocio
 
-El producto central que se ofrece es una página web donde los usuarios podrán comprar, vender o pedir prestados libros principalmente
-a librerías de segunda mano. Los usuarios podrán adquirir o vender tanto libros de lectura como libros de texto. Además de esto, si
-los usuarios pagan una suscripción mensual tendrán la posibilidad de que el libro que han comprado o han tomado prestado sea enviado
-a la librería de su elección sin coste extra.
+- Producto central
+
+Un portal web que permite a las librerías hacer llegar sus productos a un mayor número de clientes.
+
+- Valor añadido
+
+Una idea novedosa que beneficiaría y ayudaría a las librerías a crecer.
+
+- Utilidad
+
+Una interfaz cómoda y sencilla de entender para que las propias librerías puedan gestionar los libros que ofrecen a los clientes y así aumentar el rango de visibilidad de las mismas.
 
 ### 2.2- Xustificación da idea
 
-Esta web pretende ayudar a que el comercio local llegue a más personas, dándoles así un mayor beneficio. Al mismo tiempo, se busca
-ofrecer a los usuarios libros para su ocio o educación a un precio más económico.
-Actualmente muchas librerías pueden cumplir esta función, sin embargo esta web pretende ser un portal entre el usuario y la tienda
-que le ofrezca un servicio más rápido y cómodo, algo novedoso dentro del sector lector.
+Muchas veces visitamos bibliotecas con la esperanza de encontrar ese libro que tanto nos apetece leer y nos vamos con las manos vacías. En este caso nuestras opciones restantes son:
+
+- Comprar en libro: Lo cual supone un mayor gasto de dinero y buscar un hueco en tu hogar que tal vez no tengas.
+- Descargar el libro de manera ilegal: No es una forma efectiva ya que no siempre se encontrará el libro deseado y, si se encuentra, podría perjudicar el disponitivo que estemos utilizando para ello. Además de que las editoriales perderían sus beneficios y podrían empezar a descartar traducir o enviar muchos libros al país.
+
+Una buena alternativa para encontrar esa lectura que tanto nos apetece sería visitar las librerías de segunda mano, y con esta web buscamos darles mayor visibilidad a las mismas, así como transmitir mayor confianza.
+
+**Análisis DAFO**
+
+- Debilidades
+  - Desarrollo lento debido a ser una empresa nueva en el sector
+  - Gran manejo de datos, lo cual podría ser un problema si hay mala organización.
+- Amenazas
+  - Nuestros principales competidores ya cuentan con un gran sector de clientes
+  - Puede que algunas librerías no deseen participar en esta iniciativa
+- Fortalezas
+  - Ofrecemos una web simple y sencilla de entender
+  - Contamos con varias tiendas interesadas en utilizar nuestros servicios.
+- Oportunidades
+  - Nuestro producto es algo novedoso en el mercado que llama la atención.
+  - Frente a otros competidores, mostramos precios más asequibles.
+
 
 ### 2.3- Segmento de clientes
 
-Los potenciales clientes serían, principalmente, las personas lectoras de todas las edades, además de los padres que busquen conseguirles a sus hijos los libros de texto del curso escolar a un precio mucho más asequible y, de paso, poder darles una
-segunda vida a dichos libros.
+Los potenciales clientes serían, principalmente, las librerías de segunda mano de Galicia.
+
+A estas se les mostrará el producto y las ventajas con las que contarían.
 
 ### 2.4- Competencia
 
-La competencia más similar que podría tener este producto serían Amazon, Vinted o Wallapop, empresas que hoy en día abarcan 
-una gran cantidad de clientes por su variedad de productos y la publicidad que recibieron a lo largo del tiempo.
+La competencia más similar que podría tener este producto serían los principales portales web de librerías como pueden ser: La casa del libro, Librería Nobel o Follas Novas.
+
+Por otra parte, existen portales de compra/venta que ya cuentan con un gran segmento de clientes: Amazon, Vinted o Wallapop entre otros.
 
 ### 2.5- Proposta de valor
 
-Frente a la competencia, este producto busca centrarse en el comercio local de pueblos y ciudades, abriendo las puertas a estos
-comercios a la era digital y dándoles la posibilidad de ampliar tanto sus clientes como sus ganancias. Esta es una de las principales
-razones por las que las tiendas se verían interesadas en este producto, pues el portal web conectaría todas las librerías, mostrando
-un amplio catálogo de libros y una suscripcion que llamaría la atención de los clientes.
-
+Frente a la competencia, este producto busca centrarse en el comercio local de pueblos y ciudades de Galicia, abriendo las puertas a estos comercios a la era digital y dándoles la posibilidad de ampliar tanto sus clientes como sus ganancias. Esta es una de las principales razones por las que las tiendas se verían interesadas en este producto, pues el portal web conectaría todas las librerías, mostrando un amplio catálogo de libros y una suscripcion que llamaría la atención de los clientes.
 
 ### 2.6- Forma xurídica
 
 La forma jurídica escogida para esta empresa sería la de autónomos porque es la forma más sencilla y económica para emprendedores.
 
-
 ### 2.7- Investimentos
 
 #### 2.7.1- Custos
 Al tratarse de una forma jurídica autónoma, los costes serían mínimos ya que no es necesario el alquiler de una oficina. Los principales
-costes a tener en cuenta serían las cuotas de autónomo y sería necesario invertir en un buen equipo, un ordenador potente.
+costes a tener en cuenta serían las cuotas de autónomo y sería necesario invertir en un buen equipo, un ordenador potente que podría costar alrededor de 800€ con una conexión a internet de fibra (30€ aprox.)
 
 #### 2.7.2- Ingresos
 
-El precio de los productos, en este caso libros, dependerá de la tienda a cargo de los mismos, la empresa se llevaría un porcentaje por gastos de gestión.
+El precio de los productos, en este caso libros, dependerá de la tienda a cargo de los mismos, suelen costar alrededor de 5€ a 20€, la empresa se llevaría un porcentaje por gastos de gestión así como las ganancias de las suscripciones que costarán 10€ al mes.
 
 ### 2.8- Viabilidade
 
