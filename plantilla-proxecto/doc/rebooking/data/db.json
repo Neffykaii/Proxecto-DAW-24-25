@@ -1,0 +1,40 @@
+{
+    "libros": [
+        {
+            "idLibro": "1",
+            "nombreLibro": "El señor de los anillos",
+            "isbnLibro": "1234567891",
+            "nombreAutor": "Tolkien",
+            "imagenLibro": "ththhjyfmjgm",
+            "generoLibro": "Fantasía",
+            "editorialLibro": "Minotauro",
+            "estadoLibro": "0",
+            "precioLibro": "10",
+            "idiomaLibro": "español",
+            "añoPublicacion": "1980"
+        },
+        {
+            "idLibro": "2",
+            "nombreLibro": "El señor de los anillos",
+            "isbnLibro": "1234567891",
+            "nombreAutor": "Tolkien",
+            "imagenLibro": "ththhjyfmjgm",
+            "generoLibro": "Fantasía",
+            "editorialLibro": "Minotauro",
+            "estadoLibro": "1",
+            "precioLibro": "10",
+            "idiomaLibro": "español",
+            "añoPublicacion": "1980"
+        }
+    ],
+    "librerias": [
+        {
+            "idLibreria": "1",
+            "nombreLibreria": "Hojas de Lorien",
+            "direccionLibreria": "Vilagarcia",
+            "mailLibreria": "hojaslorien@gmail.com",
+            "nombreSesionLibreria": "hojitas",
+            "passLibreria": "hdgnfngfnfn"
+        }
+    ]
+}

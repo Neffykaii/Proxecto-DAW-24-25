@@ -9,7 +9,7 @@
 
 ## 1- Diagrama da arquitectura
 
-![alt text](../img/Diagrama-arquitectura-proyectoSAF.jpg)
+![alt text](../img/diagrama_arquitectura_proyectoSAF.drawio.png)
 
 ## 2- Casos de uso
 
@@ -20,11 +20,11 @@
 ## 3- Diagrama de Base de Datos
 - Modelo Entidade/relación
 
-![alt text](../img/Diagrama-ER-proyectoSAF.jpg)
+![alt text](../img/DiagramaER-proyectoSAF.drawio.png)
 
 - Modelo relacional
 
-![alt text](../img/Diagrama-relacional-proyectoSAF.jpg)
+![alt text](../img/Diagrama-clases-proyectoSAF.drawio.png)
 
 ## 4- Deseño de interface de usuarios
 
