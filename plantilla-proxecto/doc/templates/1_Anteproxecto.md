@@ -187,4 +187,4 @@ Diseño: 1 semana (28 de octubre)
 Codificación y pruebas: 1 mes (25 de noviembre)
 
 **Diagrama de Gantt**
-![alt text](../img/Diagrama-gantt-proyectoSAF.png)
+![alt text](../../img/Diagrama-gantt-proyectoSAF.png)
