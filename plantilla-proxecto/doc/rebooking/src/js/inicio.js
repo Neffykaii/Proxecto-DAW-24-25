@@ -34,4 +34,4 @@ function getData(){
     })
 }
 
-//$d.addEventListener("DOMContentLoaded", getData)
+$d.addEventListener("DOMContentLoaded", getData)

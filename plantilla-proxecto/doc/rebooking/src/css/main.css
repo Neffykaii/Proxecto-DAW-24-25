@@ -1,0 +1,139 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-fondo:white;
+    --capa-marron-1:#592A00;
+    --capa-marron-2:#855C37;
+    --capa-marron-3:#9F6E44;
+    --capa-marron-4:#AC784A;
+    --color-destacado:#B8FFF1;
+    --fondo-footer: #D5BBA4;
+}
+
+main.contenido{
+    padding-top: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 2rem;
+    
+}
+
+.portada{
+    display: grid;
+    grid-template-columns: 1fr .2fr .2fr 1fr;
+    grid-template-areas: 
+        "imagen hoja1 hoja2 portada ";
+}
+
+.imagenPortada{
+    z-index: 4;
+    background-color: #B8FFF1;
+    grid-area: imagen;
+}
+.color1{
+    z-index: 3;
+    grid-area: hoja1;
+    background-color: var(--capa-marron-2);
+}
+
+.color2{
+    z-index: 2;
+    grid-area: hoja2;
+    background-color: var(--capa-marron-3);
+}
+
+.principal{
+    z-index: 1;
+    grid-area: portada;
+    background-color: var(--capa-marron-4);
+}
+
+.portada>div{
+    box-shadow: 2px 0px 10px black;
+    
+}
+
+.book-contenedor{
+    position: relative;
+    width: 55vw;
+    max-width: 1000px;
+    min-width: 320px;
+    right: 15%;
+    
+}
+.book-contenedor>img{
+    height: 100%;
+    width: 100%;
+   rotate: -90deg; 
+}
+
+.textoLogo{
+    position: absolute;
+    bottom: 35%;
+    right: 30%;
+    font-size: 3.2vw;
+    color: var(--color-fondo);
+    
+} 
+
+h3{
+    color: var(--capa-marron-1);
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+
+.sobreNosotros{
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+    gap: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardAbout{
+    width: 15rem;
+    height: 16.5rem;
+    background-color: #AC784A;
+    color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem;
+    margin: 1rem 4rem;
+    gap: 2rem;
+    position: relative;
+}
+
+h4.nombre{
+    font-size: 1.2rem;
+    padding-top: 2rem;
+}
+
+.img-contenedor{
+    position: absolute;
+    height: 1rem;
+    left: 11rem;
+    bottom: 16rem;
+    margin: 0;
+
+}
+
+.mas-btn{
+    align-self: flex-end;
+    text-decoration: none;
+    color: var(--color-fondo);
+    cursor: pointer;
+    
+}

@@ -31,10 +31,29 @@
         {
             "idLibreria": "1",
             "nombreLibreria": "Hojas de Lorien",
+            "logoLibreria": "hojasdelorien",
             "direccionLibreria": "Vilagarcia",
             "mailLibreria": "hojaslorien@gmail.com",
             "nombreSesionLibreria": "hojitas",
             "passLibreria": "hdgnfngfnfn"
+        },
+        {
+            "idLibreria": "2",
+            "nombreLibreria": "Casa del Libro",
+            "logoLibreria": "casadellibro",
+            "direccionLibreria": "santiago",
+            "mailLibreria": "casadellibro@gmail.com",
+            "nombreSesionLibreria": "cdellibro",
+            "passLibreria": "contraseña"
+        },
+        {
+            "idLibreria": "4",
+            "nombreLibreria": "Follas Novas",
+            "logoLibreria": "follasnovas",
+            "direccionLibreria": "Santiago",
+            "mailLibreria": "follasnovas@gmail.com",
+            "nombreSesionLibreria": "fnovas",
+            "passLibreria": "contraseña"
         }
     ]
 }

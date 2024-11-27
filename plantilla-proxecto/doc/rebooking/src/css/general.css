@@ -15,6 +15,7 @@
 }
 
 header{
+    grid-area: header;
     position: fixed;
     z-index: 4;
     top: 0;
@@ -74,26 +75,22 @@ li:hover .userHover{
     color: var(--capa-marron-1);
 }
 
-/* .fa-user:not(:hover){
-    content:"\f007";
-    font-family: "Font Awesome 6 Free";
-} */
-
 .menuPrincipal>li{
     padding: 0 4rem 0 4rem;
 }
 main{
     width: 100%;
     overflow-x: hidden;
+    grid-area: main;
 }
 
 body{
-    height: 100%;
-    width: auto;
+    height: max-content;
     display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-rows: repeat(3, minmax(auto,auto));
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header"
+                "main"
+                "footer";
   
 }
 
@@ -111,39 +108,7 @@ body{
     
 }
 
-/* .book-contenedor {
-    position: relative;
-   width: 100%;
-   rotate: -90deg;
-   width: 20rem;
-   height: 30rem;
-  }
-  
-  .book-contenedor-img {
-    position: fixed;
- 
-    object-position: center; 
-  }  
-    */
 
-/*  .book-contenedor{
-    position: relative;
-    width: 80%;
-    max-width: 100%;
-    right: 2.5rem;
-     right: 2.5rem; 
-}
-
-.book-contenedor>img{
-    width: 100%;
-    display: flex;
-    rotate: -90deg;
-    width: 40rem;
-    height: 50rem;
-    max-width: 60rem;
-    min-width: 10rem;
-    
-} */
 
 .book-contenedor{
     position: relative;
@@ -191,37 +156,9 @@ body{
         grid-template-areas: 
         "hoja1 hoja2 portada"
         "imagen imagen imagen";
-    }
-
-   
+    } 
     
 }
- 
-
-
-/* .book-contenedor>img{
-   position: absolute;
-     left: 40%; 
-    color: var(--capa-marron-1);
-     width: 40rem;
-    height: 50rem; 
-     width: 40vw;
-    height: 80vh; 
-    max-width: 60rem;
-    min-width: 30rem;
-    rotate: -90deg;
-    filter: drop-shadow(0px 0px 5px black);
-    bottom: 25%;
-} */
-
-/* .textoLogo{
-    position: absolute;
-    bottom: 50%;
-    right: 25%;
-} */
-/* .textoLogo>h2{
-    font-size: 3rem;
-} */
 
 .imagenPortada{
     z-index: 3;
@@ -262,17 +199,6 @@ h3{
     gap: .5rem;
     display: flex;
     flex-wrap: wrap;
-   
-    /*display: grid;
-    
-    object-fit: contain;
-    grid-template-columns: repeat(auto-fill,minmax(auto,auto)); */
-
-
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(auto, 15rem));
-    justify-content:space-around;
-    gap: 2rem; */
 }
 
 
@@ -302,7 +228,7 @@ h4.nombre{
     left: 11rem;
     bottom: 16rem;
     margin: 0;
-    /* bottom: 1.8rem; */
+ 
 }
 
 .mas-btn{
@@ -330,35 +256,14 @@ h4.nombre{
 footer{
     background-color: var(--fondo-footer);
     color: var(--color-fondo);
+    grid-area: footer;
+
 }
 
 div.footerSuperior{
-    /* height: max-content; */
-    display: grid;
-   /*  width: 90%; */
-	/* margin: 0 auto; */
-    /* gap: 1rem; */
-    /* grid-auto-rows: 12rem; */
-    grid-auto-flow: dense;
-    justify-content: space-around;
-    grid-template-columns: repeat(auto-fit,minmax(auto, 15rem));
-    grid-template-rows: repeat(auto-fit,minmax(auto, 15rem));
-    /* grid-auto-rows: auto; */
-    /* grid-template-rows: repeat(auto-fit,minmax(min(100%,10rem)1fr)); */
-    /* grid-template: 
-    "info"
-    "aviso"
-    "contacto"; */
+    display: flex;
+  justify-content: space-around;
 
-   /*  @media(min-width:768px){
-        grid-template: 
-        "info aviso contacto"
-    } */
-    /*display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;*/
     
 }
 
@@ -375,20 +280,6 @@ footer li{
     flex-wrap: wrap;
 
 }
-
-/*.footerSuperior>ul{
-    height: 12rem;
-    display: flex;
-    text-align: start;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:center;
-    flex-wrap: wrap;
-}
-
-.footerSuperior>ul>li{
-    
-}*/
 
 .footerInferior{
     background-color: var(--capa-marron-1);

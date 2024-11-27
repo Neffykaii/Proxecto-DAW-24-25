@@ -1,8 +1,6 @@
 const $d=document,
-    $listaLibrerias=$d.querySelector(".lista-librerias"),
     $libreria=$d.querySelector(".libreria");
 
-let librerias=[]
 let libreria=[]
 
 async function ajax(options){
@@ -29,6 +27,12 @@ async function ajax(options){
     }
 }
 
+const params = new URLSearchParams(window.location.search);
+const id = params.get('id');
+
+console.log(id)
+
+
 function getLibreria(id){
     ajax({
         url:`http://localhost:3000/librerias?idLibreria=${id}`,
@@ -43,40 +47,27 @@ function getLibreria(id){
 
 function renderLibreria(libreria){
     $libreria.innerHTML=libreria.map(libreria=>`
+        <h2>${libreria.nombreLibreria}</h2>
         <article class="vistaLibreria">
             <img data-id="${libreria.idLibreria}" src="./imagenesLibrerias/${libreria.logoLibreria}.jpg" alt="${libreria.nombreLibreria}">
-            <p class="nombre">${libreria.nombreLibreria}</p>
-            <p class="nombre">${libreria.direccionLibreria}</p>
-            <p class="nombre">${libreria.mailLibreria}</p>
-        </article>`).join('')
+        <address>
+        Encuentranos en: ${libreria.direccionLibreria}</br>
+        Contacta con nosotros: <a href="mailto:${libreria.mailLibreria}">${libreria.mailLibreria}</a>
+        </address>
+            </article>`).join('')
 }
 
+$d.addEventListener("DOMContentLoaded", e=>{
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get('id');
 
-function getLibrerias(){
-    ajax({
-        url:`http://localhost:3000/librerias`,
-        fExito:(dataLibrerias)=>{
-            librerias=[...dataLibrerias]
-            console.log(librerias)
-            renderLibrerias(librerias)
-        },
-        fError:(error)=>console.log(error)
-    })
-}
+console.log(id);
 
-function renderLibrerias(librerias){
-    $listaLibrerias.innerHTML=librerias.map(libreria=>`
-        <article class="libreria">
-            <img data-id="${libreria.idLibreria}" src="./imagenesLibrerias/${libreria.logoLibreria}.jpg" alt="${libreria.nombreLibreria}">
-            <p class="nombre">${libreria.nombreLibreria}</p>
-        </article>`).join('')
-}
+    if (id) {
+        getLibreria(id);
+    } else {
+        console.error("ID no encontrado en la URL");
+    }
 
-$d.addEventListener("DOMContentLoaded",getLibrerias)
-
-$listaLibrerias.addEventListener("click", async e=>{
-    const id = e.target.dataset.id;
-    window.location.href = `vistaLibreria.html?id=${id}`; 
-}
-)
+})
 

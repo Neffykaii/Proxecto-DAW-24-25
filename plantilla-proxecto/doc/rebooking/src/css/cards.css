@@ -1,0 +1,100 @@
+:root{
+    --color-fondo:white;
+    --capa-marron-1:#592A00;
+    --capa-marron-2:#855C37;
+    --capa-marron-3:#9F6E44;
+    --capa-marron-4:#AC784A;
+    --color-destacado:#B8FFF1;
+    --fondo-footer: #D5BBA4;
+}
+
+h2.catalogo{
+    text-align: center;
+    color: var(--capa-marron-1);
+    margin-bottom: 4rem;
+
+}
+
+main{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 2rem;
+    
+
+}
+
+.lista-libros{
+    
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 80%; 
+    max-width: 800px;
+
+}
+.libro{
+    width: 10rem;
+    text-align: center;
+    background-color:var(--capa-marron-4) ;
+    color: var(--color-fondo);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Cards librerias */
+h2.tituloLibrerias{
+    text-align: center;
+    color: var(--capa-marron-1);
+    margin-bottom: 4rem;
+}
+
+.lista-librerias{
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 80%; 
+    max-width: 800px;
+    gap: 2rem;
+}
+.libreria{
+    text-align: center;
+    color: var(--capa-marron-1);
+}
+
+.libreria img:hover{
+    box-shadow: 0 0 .5rem black;
+}
+
+.libreria img{
+    width: 10rem;
+    gap: 2rem;
+    border: .2rem solid var(--capa-marron-1);
+
+}
+
+.vistaLibreria{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.vistaLibreria>address{
+    color: var(--capa-marron-1);
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+address a{
+    text-decoration: none;
+    color: var(--capa-marron-1);
+}
+
+address a:hover{
+    color: var(--capa-marron-2);
+}

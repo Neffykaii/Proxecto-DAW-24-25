@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/mostrarLibros.js" defer></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet">
+ 
     <title>Document</title>
 </head>
 <body>
     <header>
         <ul>
-            <li>Inicio</li>
-            <li>Catálogo</li>
+            <li>logo</li>
+        </ul>
+        <ul class="menuPrincipal">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="menuHover">Catálogo</li>
             <li>Librerías</li>
         </ul>
         <ul>
-            <li>inicia sesión</li>
-            <li>Regístrate</li>
+            <li><i class="fa-regular fa-user userContorno"></i>
+                <i class="fa-solid fa-user userHover"></i></li>
+            <li><button class="registrar">Regístrate</button></li>
         </ul>
     </header>
     <main>
-        <h2>Catálogo</h2>
+        <h2 class="catalogo">Catálogo</h2>
         <div class="lista-libros">
           <!-- template-lista-libros -->  
+          <div class="libro">
+            <img src="" alt="">
+            <p class="nombre"></p>
+            <p class="autor"></p>
+        </div>
         </div>
     </main>
 
@@ -31,10 +44,36 @@
             <p class="nombre"></p>
             <p class="autor"></p>
         </div>
-        
       </template>
-    <footer>
-
+      <footer>
+        <div class="footerSuperior">
+        <ul class="info">
+            <li class="tituloFooter">Re:Booking</li>
+            <li>Sobre nosotros</li>
+            <li>Catálogo</li>
+            <li>Librerías</li>
+            <li>Suscripción</li>
+        </ul>
+        <ul class="aviso">
+            <li class="tituloFooter">Información legal</li>
+            <li>Aviso legal</li>
+            <li>Política de privacidad</li>
+            <li>Política de cookies</li>
+        </ul>    
+        <ul class="contacto">
+            <li class="tituloFooter">Ayuda</li>
+            <li>Contacta con nosotros</li>
+            <li>Gastos de envío</li>
+            <ul class="redes">
+                <li>Encuentranos en:</li>
+                <li>instagram</li>
+                <li>facebook</li>
+                <li>twitter</li>
+            </ul>
+        </ul>
+        
+        </div>
+        <div class="footerInferior"><p>Cophyright Syl</p></div>
     </footer>
 </body>
 </html>
