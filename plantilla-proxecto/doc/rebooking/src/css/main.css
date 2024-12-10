@@ -38,7 +38,10 @@ main.contenido{
     z-index: 4;
     background-color: #B8FFF1;
     grid-area: imagen;
+
 }
+
+
 .color1{
     z-index: 3;
     grid-area: hoja1;

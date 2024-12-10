@@ -12,6 +12,7 @@
     --capa-marron-4:#AC784A;
     --color-destacado:#B8FFF1;
     --fondo-footer: #D5BBA4;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header{
@@ -56,6 +57,18 @@ body{
     align-items: center;
     box-shadow: 0px 5px 10px black;
 }
+
+.logo-base{
+    width: 3rem;
+    position: relative;
+   /* left: 2rem;
+    top: .1rem; */
+    margin: 0;
+}
+/* .logo-base>img{
+    top: 1rem;
+    
+} */
 
  header>ul{
     display: flex;
@@ -122,6 +135,13 @@ li{
     list-style: none;
 }
 
+
+.logo-principal{
+    width: 20rem;
+    top:4rem;
+    position: relative;
+    margin: 0;
+}
 
 
 .fa-quote-left{

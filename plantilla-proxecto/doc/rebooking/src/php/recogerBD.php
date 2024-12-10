@@ -4,6 +4,7 @@ require "conexionBD.php";
 
 $libros=[];
 $librerias=[];
+$acciones=[];
 
 $conexionBD->set_charset("utf8mb4");
 
@@ -23,10 +24,18 @@ while ($row = mysqli_fetch_array($consultaMostrarLibrerias, MYSQLI_ASSOC)) {
     }, $row);
 }
 
+$consultaMostrarAcciones = $conexionBD->query("SELECT * FROM acciones");
+
+while ($row = mysqli_fetch_array($consultaMostrarAcciones, MYSQLI_ASSOC)) {
+    $acciones[] = array_map(function($valor) {
+        return mb_convert_encoding($valor, 'UTF-8', 'auto');
+    }, $row);
+}
+
 $jsonData="../../data/db.json";
 
 
-$data=json_encode(['libros'=>$libros,'librerias'=>$librerias], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+$data=json_encode(['libros'=>$libros,'librerias'=>$librerias,'acciones'=>$acciones], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
 echo $data;
 

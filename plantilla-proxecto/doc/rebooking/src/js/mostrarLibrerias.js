@@ -76,7 +76,7 @@ $d.addEventListener("DOMContentLoaded",getLibrerias)
 
 $listaLibrerias.addEventListener("click", async e=>{
     const id = e.target.dataset.id;
-    window.location.href = `vistaLibreria.html?id=${id}`; 
+    window.location.href = `vistaLibreria.php?id=${id}`; 
 }
 )
 

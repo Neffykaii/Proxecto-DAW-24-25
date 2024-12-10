@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,33 +11,38 @@
     <link rel="stylesheet" href="css/cards.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet">
  
-    <title>Document</title>
+    <title>Catálogo</title>
 </head>
 <body>
     <header>
         <ul>
-            <li>logo</li>
+            <li><img class="logo-base" src="./img/logo_base.png" alt="logotipo"></li>
         </ul>
         <ul class="menuPrincipal">
-            <li><a href="index.html">Inicio</a></li>
-            <li class="menuHover">Catálogo</li>
-            <li>Librerías</li>
+            <li><a href="index.php">Inicio</a></li>
+            <li class="menuHover"><a href="catalogo.php">Catálogo</a></li>
+            <li><a href="librerias.php">Librerías</a></li>
         </ul>
-        <ul>
-            <li><i class="fa-regular fa-user userContorno"></i>
-                <i class="fa-solid fa-user userHover"></i></li>
-            <li><button class="registrar">Regístrate</button></li>
-        </ul>
+        <?php
+        if(isset($_SESSION['usuario'])){
+            echo '<ul>
+            <li><a href="espacio'.$_SESSION['tipoUser'].'.php"><i class="fa-regular fa-user userContorno"></i>
+                <i class="fa-solid fa-user userHover"></i></a></li>
+            <li><a href="php/logout.php"><button class="registrar">Cerrar sesión</button></a></li>
+        </ul> ';
+        }else{
+            echo '<ul>
+            <li><a href="loginForm.php"><i class="fa-regular fa-user userContorno"></i>
+                <i class="fa-solid fa-user userHover"></i></a></li>
+            <li><a href="registroForm.php"><button class="registrar">Registrarse</button></a></li>
+        </ul> ';
+        }
+        ?>
     </header>
     <main>
         <h2 class="catalogo">Catálogo</h2>
         <div class="lista-libros">
           <!-- template-lista-libros -->  
-          <div class="libro">
-            <img src="" alt="">
-            <p class="nombre"></p>
-            <p class="autor"></p>
-        </div>
         </div>
     </main>
 

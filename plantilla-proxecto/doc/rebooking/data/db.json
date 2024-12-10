@@ -5,26 +5,78 @@
             "nombreLibro": "El señor de los anillos",
             "isbnLibro": "1234567891",
             "nombreAutor": "Tolkien",
-            "imagenLibro": "ththhjyfmjgm",
+            "imagenLibro": "elseñordelosanillos",
             "generoLibro": "Fantasía",
             "editorialLibro": "Minotauro",
             "estadoLibro": "0",
             "precioLibro": "10",
             "idiomaLibro": "español",
-            "añoPublicacion": "1980"
+            "anoPublicacion": "1980"
         },
         {
             "idLibro": "2",
-            "nombreLibro": "El señor de los anillos",
+            "nombreLibro": "El Hobbit",
             "isbnLibro": "1234567891",
             "nombreAutor": "Tolkien",
-            "imagenLibro": "ththhjyfmjgm",
+            "imagenLibro": "elhobbit",
             "generoLibro": "Fantasía",
             "editorialLibro": "Minotauro",
             "estadoLibro": "1",
             "precioLibro": "10",
             "idiomaLibro": "español",
-            "añoPublicacion": "1980"
+            "anoPublicacion": "1980"
+        },
+        {
+            "idLibro": "3",
+            "nombreLibro": "La sirenita",
+            "isbnLibro": "1234567891",
+            "nombreAutor": "Hans Christian Andersen",
+            "imagenLibro": "lasirenita",
+            "generoLibro": "clásico",
+            "editorialLibro": "edelvives",
+            "estadoLibro": "1",
+            "precioLibro": "8",
+            "idiomaLibro": "español",
+            "anoPublicacion": "2022"
+        },
+        {
+            "idLibro": "4",
+            "nombreLibro": "El castillo ambulante",
+            "isbnLibro": "1234567891",
+            "nombreAutor": "Dyana Wynne Jones",
+            "imagenLibro": "elcastilloambulante",
+            "generoLibro": "fantasía",
+            "editorialLibro": "nocturna",
+            "estadoLibro": "1",
+            "precioLibro": "9",
+            "idiomaLibro": "español",
+            "anoPublicacion": "2020"
+        },
+        {
+            "idLibro": "5",
+            "nombreLibro": "El imperio final",
+            "isbnLibro": "1234567891",
+            "nombreAutor": "Brandon Sanderson",
+            "imagenLibro": "elimperiofinal",
+            "generoLibro": "fantasía",
+            "editorialLibro": "nova",
+            "estadoLibro": "1",
+            "precioLibro": "10",
+            "idiomaLibro": "español",
+            "anoPublicacion": "2021"
+        },
+        {
+            "idLibro": "6",
+            "nombreLibro": "Orgullo y prejuicio",
+            "isbnLibro": "1234567891",
+            "nombreAutor": "Jane Austen",
+            "imagenLibro": "orgulloyprejuicio",
+            "generoLibro": "romance",
+            "editorialLibro": "alma",
+            "estadoLibro": "1",
+            "precioLibro": "6",
+            "idiomaLibro": "español",
+            "anoPublicacion": "2017"
         }
     ],
     "librerias": [
@@ -34,8 +86,8 @@
             "logoLibreria": "hojasdelorien",
             "direccionLibreria": "Vilagarcia",
             "mailLibreria": "hojaslorien@gmail.com",
-            "nombreSesionLibreria": "hojitas",
-            "passLibreria": "hdgnfngfnfn"
+            "nombreSesion": "hojitas",
+            "passSesion": "hdgnfngfnfn"
         },
         {
             "idLibreria": "2",
@@ -43,8 +95,8 @@
             "logoLibreria": "casadellibro",
             "direccionLibreria": "santiago",
             "mailLibreria": "casadellibro@gmail.com",
-            "nombreSesionLibreria": "cdellibro",
-            "passLibreria": "contraseña"
+            "nombreSesion": "cdellibro",
+            "passSesion": "contraseña"
         },
         {
             "idLibreria": "4",
@@ -52,8 +104,40 @@
             "logoLibreria": "follasnovas",
             "direccionLibreria": "Santiago",
             "mailLibreria": "follasnovas@gmail.com",
-            "nombreSesionLibreria": "fnovas",
-            "passLibreria": "contraseña"
+            "nombreSesion": "fnovas",
+            "passSesion": "contraseña"
+        }
+    ],
+    "acciones": [
+        {
+            "idAccion": "1",
+            "idLibro": "2",
+            "idCliente": "2",
+            "tipoAccion": "compra"
+        },
+        {
+            "idAccion": "2",
+            "idLibro": "4",
+            "idCliente": "2",
+            "tipoAccion": "prestamo"
+        },
+        {
+            "idAccion": "3",
+            "idLibro": "1",
+            "idCliente": "2",
+            "tipoAccion": "compra"
+        },
+        {
+            "idAccion": "4",
+            "idLibro": "1",
+            "idCliente": "2",
+            "tipoAccion": "compra"
+        },
+        {
+            "idAccion": "5",
+            "idLibro": "3",
+            "idCliente": "2",
+            "tipoAccion": "prestamo"
         }
     ]
 }

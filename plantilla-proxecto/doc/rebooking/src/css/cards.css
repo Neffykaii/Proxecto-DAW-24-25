@@ -46,6 +46,27 @@ main{
     margin: 1rem;
 }
 
+.libro:hover{
+    box-shadow: 0 0 .5rem black;
+    cursor: pointer;
+}
+
+.libro img{
+    width: 5rem;
+    gap: 2rem;
+
+}
+
+.libro p.nombre{
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+.libro p.autor{
+    font-size: .8rem;
+    opacity: 80%;
+}
+
 /* Cards librerias */
 h2.tituloLibrerias{
     text-align: center;
@@ -60,6 +81,7 @@ h2.tituloLibrerias{
     width: 80%; 
     max-width: 800px;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 .libreria{
     text-align: center;
@@ -77,24 +99,75 @@ h2.tituloLibrerias{
 
 }
 
+.vista-libro>h2{
+    color: var(--capa-marron-1);
+    text-align: center;
+    padding: 1rem;
+}
+
+.vistaLibro{
+    display: flex;
+    gap: 4rem;
+    padding: 4rem;
+    background-color: var(--capa-marron-4);
+    color: var(--color-fondo);
+}
+
+.vistaLibro img{
+    height: 20rem;
+    margin: 0 4rem;
+}
+
+
 .vistaLibreria{
     display: flex;
     gap: 1rem;
     padding: 1rem;
 }
 
-.vistaLibreria>address{
-    color: var(--capa-marron-1);
+section.libreria{
+    margin: 2rem;
+}
+
+.vistaLibreria{
+    background-color: var(--capa-marron-4);
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.infoLibro{
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.botonesLibro button{
+    background-color: transparent;
+    color: var(--color-fondo);
+    margin: 1rem;
+    padding: .3rem .5rem;
+    border: .08rem solid var(--color-destacado);
+    border-radius: .2rem;
+}
+
+.botonesLibro button:hover{
+    background-color: var(--color-destacado);
+    color: var(--capa-marron-1);
+}
+
+.vistaLibreria>address{
+    color: var(--color-fondo);
+    display: flex;
+    align-items:flex-end;
     
 }
 
 address a{
     text-decoration: none;
-    color: var(--capa-marron-1);
+    color: var(--color-fondo);
 }
 
 address a:hover{
-    color: var(--capa-marron-2);
+    color: var(--color-destacado);
 }

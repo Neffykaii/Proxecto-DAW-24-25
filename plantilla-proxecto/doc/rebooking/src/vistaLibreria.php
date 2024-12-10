@@ -1,35 +1,47 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/mostrarLibrerias.js" defer></script>
+    <script src="js/vistaLibreria.js" defer></script>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/cards.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet">
  
-    <title>Document</title>
+    <title>Librerías</title>
 </head>
 <body>
     <header>
         <ul>
-            <li>logo</li>
+            <li><img class="logo-base" src="./img/logo_base.png" alt="logotipo"></li>
         </ul>
         <ul class="menuPrincipal">
-            <li><a href="index.html">Inicio</a></li>
-            <li>Catálogo</li>
-            <li class="menuHover">Librerías</li>
+        <li><a href="index.php">Inicio</a></li>
+            <li><a href="catalogo.php">Catálogo</a></li>
+            <li class="menuHover"><a href="librerias.php">Librerías</a></li>
         </ul>
-        <ul>
-            <li><i class="fa-regular fa-user userContorno"></i>
-                <i class="fa-solid fa-user userHover"></i></li>
-            <li><button class="registrar">Regístrate</button></li>
-        </ul>
+        <?php
+        if(isset($_SESSION['usuario'])){
+            echo '<ul>
+            <li><a href="espacio'.$_SESSION['tipoUser'].'.php"><i class="fa-regular fa-user userContorno"></i>
+                <i class="fa-solid fa-user userHover"></i></a></li>
+            <li><a href="php/logout.php"><button class="registrar">Cerrar sesión</button></a></li>
+        </ul> ';
+        }else{
+            echo '<ul>
+            <li><a href="loginForm.php"><i class="fa-regular fa-user userContorno"></i>
+                <i class="fa-solid fa-user userHover"></i></a></li>
+            <li><a href="registroForm.php"><button class="registrar">Registrarse</button></a></li>
+        </ul> ';
+        }
+        ?>
     </header>
     <main>
-        <h2 class="tituloLibrerias">Librerías</h2>
-        <section class="lista-librerias">
-          <!-- template-lista-libros -->  
+        <section class="libreria">
+          <!-- template-libreria -->  
         </section>
     </main>
 
@@ -41,6 +53,7 @@
             <p class="autor"></p>
         </article>
       </template>
+
       <footer>
         <div class="footerSuperior">
         <ul class="info">

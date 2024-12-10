@@ -11,39 +11,36 @@
 
 ### 1.1- Instalación
 
-> *EXPLICACIÓN:* Neste apartado describiranse todos os pasos necesarios para que calquera persoa poida descargar o código do proxecto e continuar o seu desenvolvemento.
->
-> Como:
-> 
-> - Requirimentos de hardware, servidores na nube, etc.
-> - Software necesario: servidores (Exemplo servidor Web), software externo co que interaciona a nosa aplicación, contenedores, etc.
-> - Carga inicial de datos na base de datos. Migración de datos xa existentes noutros formatos.
-> - Usuarios da aplicación.
-> - Diagrama final de despregue (se hai variacións con respecto ó realizado na anterior fase).
+Para continuar con el proyecto es necesaria la conexión con la base de datos, para ello descargaremos el programa xampp que nos proporcionará un espacio para la base de datos, asi como permitirnos leer los archivos PHP, cabe destacar que es necesario activar el controlador de xampp cada vez que se desee utilizar.
+
+También es posible continuar desde el Host de producción utilizado, en este caso [Hostinger](https://www.hostinger.es/) de esta manera podrá ver los cambios sin necesidad de instalaciones.
 
 ### 1.2- Administración do sistema
 
-> *EXPLICACIÓN:* Neste apartado indicarase información relativa á administración do sistema, é dicir, tarefas que se deberán realizar unha vez que o sistema estea funcionando.
->
-> Como:
-> 
-> - Copias de seguridade do sistema.
-> - Copias de seguridade da base de datos.
-> - Xestión de usuarios.
-> - Xestión seguridade.
-> - Xestión de incidencias, que poden ser de dous tipos: de sistema (accesos non autorizados á BD, etc) ou de fallos no software.
->
-> No caso de que sexan precisas.
+Para acceder al sitio web se recomienda entrar al siguiente enlace
+[Rebooking](https://lime-goat-560503.hostingersite.com/rebooking/src/index.php)
+
+Sin embargo, debido a que el host no lee los archivos JSON, desde el ordenador que se está utilizando, se recomienda inicializar el archivo db.json ubicado en la carpeta rebooking/data.
+
+Esto lo conseguiremos abriendo la consola del sistema "CMD" y escribiendo las siguientes instrucciones:
+
+- cd ..
+- cd /rebooking/data
+- json-init -w db.json
 
 ## 2- Manual de usuario
 
-> *EXPLICACIÓN:* Neste apartado fara
->
-> - Indicar se será necesario formar ós usuarios. En caso afirmativo planificar.
-> - Manual de usuario, FAQ ou outro xeito que sexa o máis adecuado para que os usuarios saiban usar a nosa aplicación informática.
->
-> Todo esto se a aplicación require de manual de usuario.
+Una vez todo el sistema se encuentra en funcionamiento, podremos navegar por los diferentes apartados con total libertad, incluso puede registrar un nuevo usuario si así lo desea para poder disfrutar de la experiencia completa.
+Una vez creamos el nuevo usuario, tendremos un espacio para nosotros pulsando en el icono de usuario, el cual nos rediccionará una vez hayamos iniciado sesión, mostrandonos los libros escogidos desde el propio catálogo.
+
+En caso de que quiera utilizar un usuario ya creado:
+
+Usuario: JuliaR
+Contraseña: nuevac
 
 ## 3- Melloras futuras
 
-> *EXPLICACIÓN:* Neste apartado incluiranse as posibilidades de mellora da aplicación no futuro.
+- Buscador de libros en el catálogo
+- Administración de libros desde los usuarios de "librerías"
+- Uso de ventanas modales para confirmación de diversas acciones
+- Mejoras en el diseño de la aplicación

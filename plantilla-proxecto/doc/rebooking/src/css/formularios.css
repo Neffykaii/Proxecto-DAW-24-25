@@ -1,0 +1,71 @@
+:root{
+    --color-fondo:white;
+    --capa-marron-1:#592A00;
+    --capa-marron-2:#855C37;
+    --capa-marron-3:#9F6E44;
+    --capa-marron-4:#AC784A;
+    --color-destacado:#B8FFF1;
+    --fondo-footer: #D5BBA4;
+}
+
+main{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+h2{
+    text-align: center;
+    color: var(--capa-marron-1);
+    padding: 1rem;
+}
+
+#formRegistro, #formLogin{
+    color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--capa-marron-4);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#formRegistro p, #formLogin p{
+    margin: 1rem;
+}
+
+#formRegistro input, #formLogin input, #rol{
+    border-radius: .2rem;
+    border: .08rem solid var(--color-fondo);
+}
+
+#formRegistro input:focus, #formLogin input:focus{
+    background-color: var(--fondo-footer);
+}
+#rol{
+    background-color: var(--capa-marron-4);
+    color: var(--color-destacado);
+    border: .08rem solid var(--color-destacado);
+    padding: .5rem;
+}
+
+.botonesForm{
+    display: flex;
+}
+
+input[type=submit], input[type=reset]{
+    background-color: transparent;
+    color: var(--color-fondo);
+    margin: 1rem;
+    padding: .3rem .5rem;
+    border: .08rem solid var(--color-destacado);
+    border-radius: .2rem;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color: var(--color-destacado);
+    color: var(--capa-marron-1);
+}

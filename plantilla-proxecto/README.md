@@ -11,39 +11,53 @@
   - [Guía de contribución](#guía-de-contribución)
   - [Links](#links)
 
-> *EXPLICACIÓN*: Este documento será a "*páxina de aterrizaxe*" do teu proxecto. Será ou primeiro que vexan vos que se interesen por el. Cúida a sua redacción con todo ou mimo. Elimina posteriormente todas as lineas "EXPLICACIÓN*" cando creas finalizada a súa redacción.
-> Podes acompañar á redacción deste ficheiro con imaxes ou gifs, pero non abuses deles.
-
 ## Taboleiro do proyecto
 
-> *EXPLICACIÓN:* neste punto indica se o proyecto está en fase de desenrolo ou finalizado.
+En fase de desarrollo
 
 ## Descrición
+Este proyecto trata de una página web donde los usuarios tendrán la oportunidad de comprar libros e incluso adquirir un préstamo directamente a librerías 2ª mano de toda Galicia. Dichas librerías podrán gestionar sus propios productos y enviarse entre locales los libros que el usuario solicita hasta su tienda de confianza, beneficiándose mayormente de los pedidos de los clientes y de las suscripciones que soliciten.
 
-> *EXPLICACIÓN*: Realiza unha breve descrición do proxecto. Non menos de 100 palabras e non máis de 300. Resalta o fundamental *coas túas propias palabras**. Utiliza unha linguaxe correcta, *pero natural**, que o entenda todo o mundo, mesmo e en especial, as persoas que non teñan un coñecemento técnico avanzado. Pode ser un estracto ou resumo de apartados que xa contemples noutros ficheiros.
-> Descrición básica das ferramentas/tecnoloxías/linguaxes de programación,... empregados.
+Para su realización se ha utilizado php, javascript, css y html, además de utilizar json y sql para guardar los datos.
 
 ## Instalación / Posta en marcha
 
-> *EXPLICACIÓN*: Neste apartado describe con toda precisión e a poder ser coa maior simplicidade/facilidade posible, como poñer en marcha a túa aplicación para probala (nun ambiente local). Valorarase moi positivamente que este proceso sexa o máis fácil posible, cunha simple instrución (p. e. un script de instalación, descarga e posta en marcha dun contedor,...).
->
+Para acceder al sitio web se recomienda entrar al siguiente enlace
+[Rebooking](https://lime-goat-560503.hostingersite.com/rebooking/src/index.php)
+
+Sin embargo, debido a que el host no lee los archivos JSON, desde el ordenador que se está utilizando, se recomienda inicializar el archivo db.json ubicado en la carpeta rebooking/data.
+
+Esto lo conseguiremos abriendo la consola del sistema "CMD" (descargando node.js previamente) y escribiendo las siguientes instrucciones:
+
+- cd ..
+- cd /rebooking/data
+- json-init -w db.json
 
 ## Uso
 
-> *EXPLICACIÓN*: É este apartado describe brevemente como se usará a aplicación Web do proxecto. Describe o uso da interface web *só o uso** (a modo de sumario) *dos aspectos máis relevantes do seu funcionamento** (máxima brevidade, coma se fose un anuncio reclamo ou comercial).
->
+Desde la aplicación de Rebooking te damos la posibilidad de:
+
+- Adquirir el libro que más te guste 0, si lo prefieres, tómalo prestado por unos días.
+- Hazte tu propia cuenta y consulta todas tus transacciones.
+- Explora el catálogo.
+- Descubre con que librerías trabajamos.
+
+Si por el contrario eres una librería que desea unirse puedes:
+
+- Administrar tus libros con facilidad.
+- Visualizar las compras y préstamos realizados por los usuarios.
 
 ## Sobre o autor
 
-> *EXPLICACIÓN*: Realiza unha breve descrición de quen es (perfil profesional), os teus puntos fortes, ou tecnoloxías que máis dominas... a motivación do proxecto, tendo sobre todo en conta un nicho de mercado sen explotar.. *Non máis de 200 palabras**. Indica a forma fiable de contactar contigo durante o proceso de creación do proxecto.
+Mi nombre es Silvana, soy una estudiante de programación que ha optado por realizar este proyecto por su gusto por la lectura, con la esperanza de dar mayor visibilidad a las librerías de 2ª mano. 
+
+He utilizado tecnologías como PHP o CSS ya que son con las que más familiarizada me siento actualmente, sin embargo me encuentro en contínuo aprendizaje y planeo, en un futuro, migrar la aplicación en busca de un lenguaje más optimo para su funcionamiento.
+
+Para cualquier duda o consulta, mi correo electrónico está a disposición de quien lo necesite: [silvanakh3@gmail.com](silvanakh3@gmail.com) 
 
 ## Licenza
 
-> *EXPLICACIÓN*: É requisito INDISPENSABLE o licenciar explicitamente o proxecto software. Recoméndase licenciar con GNU Free Documentation License Version 1.3*. Crear un ficheiro `LICENSE` na raiz do repo, co teu ficheiro de licenza. Lembra que se empregas unha licenza de software libre estás a autorizar a derivación da túa obra baixo a mesma licenza que elixas, podendo dar continuidade, p. e. outro alumno, para continuar o teu proxecto noutro curso.
-
 ## Índice
-
-> *EXPLICACIÓN*: Simplemente indexa ordenadamente todo o tey proxecto.
 
 1. [Anteproyecto](doc/templates/1_Anteproxecto.md)
 2. [Análise](doc/templates/2_Analise.md)
@@ -55,8 +69,4 @@
 
 ## Guía de contribución
 
-> EXPLICACIÓN*: Tratándose dun proxecto de software libre, é moi importante que expoñas como se pode contribuír co teu proxecto. Algúns exemplos disto son realizar novas funcionalidades, corrección e/o optimización do código, realización de tests automatizados, novas interfaces de integración, desenvolvemento de plugins etc. Se o máis conciso que poidas.
-
 ## Links
-
-> EXPLICACIÓN*: Ligazóns externas e descipciones destas ligazóns que creas conveniente indicar aquí. Xeralmente xa van estar integrados coa túa documentación, pero se requires realizar unha listaxe deles, leste é o lugar.

@@ -41,11 +41,17 @@ function getLibros(){
 
 function renderLibros(libros){
     $listaLibros.innerHTML=libros.map(libro=>`
-        <div class="libro">
-            <img src="" alt="">
-            <p class="nombre">${libro.nombreLibro}</p>
-            <p class="autor">${libro.nombreAutor}</p>
-        </div>`).join('')
+        <card data-id="${libro.idLibro}" class="libro" >
+            <img data-id="${libro.idLibro}" src="./imagenesLibros/${libro.imagenLibro}.jpg" alt="${libro.nombreLibro}">
+            <p data-id="${libro.idLibro}" class="nombre">${libro.nombreLibro}</p>
+            <p data-id="${libro.idLibro}" class="autor">${libro.nombreAutor}</p>
+        </card>`).join('')
 }
 
 $d.addEventListener("DOMContentLoaded", getLibros)
+
+$listaLibros.addEventListener("click", async e=>{
+    const id = e.target.dataset.id;
+    window.location.href = `vistaLibro.php?id=${id}`; 
+}
+)
